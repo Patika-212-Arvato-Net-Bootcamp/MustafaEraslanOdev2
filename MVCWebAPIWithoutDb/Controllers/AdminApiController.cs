@@ -8,7 +8,7 @@ namespace MVCWebAPIWithoutDb.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class AdminApiController : ControllerBase
-    {
+    { //Admin api için methodlarımı burada tanımladım.
 
         [HttpGet]
         public IActionResult GetBootCamp()
@@ -31,20 +31,7 @@ namespace MVCWebAPIWithoutDb.Controllers
             return StatusCode((int)HttpStatusCode.OK, response);
         }
 
-        //[HttpGet("id")]
-        //public async Task<IActionResult< GetByID(int id)
-        //{
-        //    var responce = await _context.BootcampServise.FindAsync(id);
-        //    return responce == null ? NotFound() : Ok(responce);
-        //}
 
-        //[HttpPost]
-        //public async Task<IActionResult> Create()
-        //{
-        //    await _context.DictionaryHelper
-
-
-        //}
 
 
     }

@@ -6,7 +6,7 @@
         {
 
         }
-        public Guid Id { get; set; } = Guid.NewGuid();
+        public Guid Id { get; set; } = Guid.NewGuid(); // bootcamp unique bir değer generate ettim ve parametreleirmi tanımladım.
         public string Name { get; set; }
         public string Description { get; set; }
 

@@ -5,7 +5,7 @@ namespace MVCWebAPIWithoutDb.Helper
 {
     public class BootcampService : IBootcampService
     {
-        List<BootcampEntity> bootcampEntities = new List<BootcampEntity> {
+        List<BootcampEntity> bootcampEntities = new List<BootcampEntity> { // listede datamı tutmayı denedim.
         new BootcampEntity { Description = "Arvato Bootcamp", Name = "arvato dotnet" },
         new BootcampEntity { Description = "Arvato Bootcamp_1", Name = "arvato dotnet_1" },
         new BootcampEntity { Description = "Arvato Bootcamp_2", Name = "arvato dotnet_2" }

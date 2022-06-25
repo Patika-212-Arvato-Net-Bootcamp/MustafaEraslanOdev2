@@ -1,6 +1,6 @@
 ﻿namespace MVCWebAPIWithoutDb.Entities
 {
-    public class ServiceResponse<T>
+    public class ServiceResponse<T> //Eğer responce alamazsak hata dönmemiz için.
     {
         public ServiceResponse(string errorMessage, int statusCode, T data)
         {
@@ -12,6 +12,6 @@
         public string ErrorMessage { get; set; }
         public int StatusCode { get; set; }
 
-        public T Data { get; set; }// ben sana data döneceğim anlamındır.   
+        public T Data { get; set; }
     }
 }

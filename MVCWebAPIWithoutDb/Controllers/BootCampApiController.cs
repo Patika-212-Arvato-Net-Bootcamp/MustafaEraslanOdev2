@@ -10,21 +10,7 @@ namespace MVCWebAPIWithoutDb.Controllers
     [ApiController]
     public class BootCampApiController : ControllerBase
     {
-        //private readonly DataContext _context;
-
-        //public BootCampApiController(DataContext context)
-        //{
-        //    _context = context;
-        //}
-        //private static List<IBootcampService> bootcamp = new List<BootcampService>
-        //{
-        //    new BootcampEntity
-        //    {
-        //        Id ,
-        //        Name = "arvato bootcamp",
-        //        Description = "Istanbul"
-        //    }
-        //};// başlangıç değeri vermeye çalıştım ancak hata aldığım için bu bloğu şimdilik yorum satırına alıyorum.
+        //Bootcampapi için methodlarımı tanımladım.
         IBootcampService _bootcampService;
         public BootCampApiController(IBootcampService bootcampService)
         {
