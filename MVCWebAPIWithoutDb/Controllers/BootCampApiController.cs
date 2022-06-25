@@ -44,6 +44,13 @@ namespace MVCWebAPIWithoutDb.Controllers
             return StatusCode((int)HttpStatusCode.OK, response);
         }
 
+        [HttpDelete]
+        public IActionResult RemoveBootCamp()
+        {
+            var response = _bootcampService.GetBootcampList();
+            return StatusCode((int)HttpStatusCode.OK, response);
+        }
+
         //[HttpPut("{id}")]
         //public IActionResult Update(int id, Issue issue)
         //{

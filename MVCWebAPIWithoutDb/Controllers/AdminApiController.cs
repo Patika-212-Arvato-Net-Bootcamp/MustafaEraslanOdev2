@@ -9,7 +9,6 @@ namespace MVCWebAPIWithoutDb.Controllers
     [ApiController]
     public class AdminApiController : ControllerBase
     {
-        
 
         [HttpGet]
         public IActionResult GetBootCamp()
@@ -20,6 +19,13 @@ namespace MVCWebAPIWithoutDb.Controllers
 
         [HttpPost]
         public IActionResult AddBootCamp()
+        {
+            var response = DictionaryHelper.GetList();
+            return StatusCode((int)HttpStatusCode.OK, response);
+        }
+
+        [HttpDelete]
+        public IActionResult RemoveBootCamp(Guid Id)
         {
             var response = DictionaryHelper.GetList();
             return StatusCode((int)HttpStatusCode.OK, response);
