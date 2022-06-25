@@ -10,12 +10,23 @@ namespace MVCWebAPIWithoutDb.Controllers
     [ApiController]
     public class BootCampApiController : ControllerBase
     {
-        //Bootcampapi için methodlarımı tanımladım.
         IBootcampService _bootcampService;
+
         public BootCampApiController(IBootcampService bootcampService)
         {
             _bootcampService = bootcampService;
         }
+
+        [HttpGet("{id}")]
+        public BootcampEntity GetById(int Id)
+        {
+            var bootCamp = _bootcampService.GetBootcampList();
+            return bootCamp.Where(x => x.Id == Id).SingleOrDefault();
+        }
+        //Bootcampapi için methodlarımı tanımladım.
+        
+
+        
         [HttpGet]
         public IActionResult GetBootCamp()
         {
@@ -23,25 +34,8 @@ namespace MVCWebAPIWithoutDb.Controllers
             return StatusCode((int)HttpStatusCode.OK, response);
         }
 
-        [HttpPost]
-        public IActionResult AddBootCamp()
-        {
-            var response = _bootcampService.GetBootcampList();
-            return StatusCode((int)HttpStatusCode.OK, response);
-        }
 
-        [HttpDelete]
-        public IActionResult RemoveBootCamp()
-        {
-            var response = _bootcampService.GetBootcampList();
-            return StatusCode((int)HttpStatusCode.OK, response);
-        }
 
-        //[HttpPut("{id}")]
-        //public IActionResult Update(int id, Issue issue)
-        //{
-        //    var response = _bootcampService.GetBootcampList();
-        //    return StatusCode((int)HttpStatusCode.OK, response);
-        //}
+
     }
 }

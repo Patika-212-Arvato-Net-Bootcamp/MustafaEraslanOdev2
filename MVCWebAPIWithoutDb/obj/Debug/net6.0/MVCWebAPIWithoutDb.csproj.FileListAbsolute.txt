@@ -25,3 +25,6 @@ C:\Users\mustafa.eraslan\source\repos\MVCWebAPIWithoutDb\MVCWebAPIWithoutDb\obj\
 C:\Users\mustafa.eraslan\source\repos\MVCWebAPIWithoutDb\MVCWebAPIWithoutDb\obj\Debug\net6.0\MVCWebAPIWithoutDb.pdb
 C:\Users\mustafa.eraslan\source\repos\MVCWebAPIWithoutDb\MVCWebAPIWithoutDb\obj\Debug\net6.0\MVCWebAPIWithoutDb.genruntimeconfig.cache
 C:\Users\mustafa.eraslan\source\repos\MVCWebAPIWithoutDb\MVCWebAPIWithoutDb\obj\Debug\net6.0\ref\MVCWebAPIWithoutDb.dll
+C:\Users\mustafa.eraslan\source\repos\MVCWebAPIWithoutDb\MVCWebAPIWithoutDb\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\mustafa.eraslan\source\repos\MVCWebAPIWithoutDb\MVCWebAPIWithoutDb\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\mustafa.eraslan\source\repos\MVCWebAPIWithoutDb\MVCWebAPIWithoutDb\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
