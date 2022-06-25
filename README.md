@@ -7,7 +7,7 @@ I have completed my dotnetcore WebApi project that meets the requirements in the
 
 Requirements:
 There will be at least 2 different web api controllers (in one project). One will handle the participants' processes, the other the admin functions. Rest standards should be considered.
-* No UI, just api.
+No UI, just api.
 --BootCampApiController
 -List Bootcamp (Active/Past)
 -Bring Bootcamp
