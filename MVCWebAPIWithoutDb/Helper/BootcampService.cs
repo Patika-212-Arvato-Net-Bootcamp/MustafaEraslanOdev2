@@ -26,15 +26,6 @@ namespace MVCWebAPIWithoutDb.Helper
         {
             bootcampEntities.Remove(bootcamp);
         }
-        //public void UpdateBootCamp(BootcampEntity bootcamp)
-        //{
-        //    var bootCamp = bootcampEntities.FirstOrDefault(x => x.Id == bootcamp.Id);
 
-        //    bootCamp.Name = bootcamp.Name;
-        //    bootCamp.Description = bootcamp.Description;
-
-        //    bootcampEntities.Update()
-            
-        //}
     }
 }
