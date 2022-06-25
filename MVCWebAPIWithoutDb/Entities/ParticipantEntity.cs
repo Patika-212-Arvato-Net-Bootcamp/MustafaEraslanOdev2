@@ -2,12 +2,12 @@
 {
     public class ParticipantEntity
     {
-        public Guid Id { get; set; } //participant için id ve parametlerimi tanımladım.
+        public int Id { get; set; } //participant için id ve parametlerimi tanımladım.
         public string Name { get; set; }
         
         public string Surname { get; set; }
 
-        public int Phone { get; set; }
+        public string Phone { get; set; }
 
     }
 }

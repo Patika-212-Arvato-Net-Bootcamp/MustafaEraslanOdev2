@@ -12,10 +12,12 @@ namespace MVCWebAPIWithoutDb.Controllers
     {
         //Admin api için methodlarımı burada tanımladım.
         IBootcampService _boottCampService;
+        IParticipantService _participantService;
 
-        public AdminApiController(IBootcampService boottCampService)
+        public AdminApiController(IBootcampService boottCampService, IParticipantService participantService)
         {
             _boottCampService = boottCampService;
+            _participantService = participantService;
         }
 
         [HttpPost]
@@ -23,6 +25,14 @@ namespace MVCWebAPIWithoutDb.Controllers
         {
             _boottCampService.AddBootCamp(entity);
             return StatusCode((int)HttpStatusCode.OK, entity);
+        }
+
+
+        [HttpGet(template: "get_participant")]
+        public IActionResult GetParticipant()
+        {
+            var response = _participantService.GetParticipantList();
+            return StatusCode((int)HttpStatusCode.OK, response);
         }
 
         [HttpDelete]
@@ -35,7 +45,14 @@ namespace MVCWebAPIWithoutDb.Controllers
         }
 
 
-
+        [HttpDelete(template: "remove_participant")]
+        public IActionResult RemoveParticipant(int Id)
+        {
+            var participant = _participantService.GetParticipantList();
+            var participantId = participant.FirstOrDefault(x => x.Id == Id);
+            participant.Remove(participantId);
+            return StatusCode((int)HttpStatusCode.OK, participantId);
+        }
 
     }
 }
